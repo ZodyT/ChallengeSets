@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengeSets
 {
@@ -18,11 +19,27 @@ namespace ChallengeSets
         public bool IsNumberEven(int number)
         {
             throw new NotImplementedException();
+            //if (number % 2 = 0)
+            //{
+            //    return true;
+            //}
+            //else
+            //{ 
+            //    return false;
+            //}
         }
 
         public bool IsNumberOdd(int num)
         {
             throw new NotImplementedException();
+            //if (num % 2 != 0)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
@@ -38,16 +55,40 @@ namespace ChallengeSets
         public int Sum(int[] numbers)
         {
             throw new NotImplementedException();
+            //int sum = numbers.Sum();
+            // return sum;
+            
         }
 
         public int SumEvens(int[] numbers)
         {
             throw new NotImplementedException();
+
+            //foreach (number in numbers)
+            //{
+            //    number % 2 = 0;
+
+            //   int sum = numbers.Sum();
+                
+            //    return sum;
+            //}
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+             throw new NotImplementedException();
+
+            //int sum = numbers.Sum();
+            //if (sum % 2 = 0)
+            //{
+            //    return false;
+            //}
+            //else
+            //{
+            //    return true;
+            //}
+
+
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
