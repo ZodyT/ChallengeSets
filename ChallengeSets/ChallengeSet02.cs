@@ -18,28 +18,28 @@ namespace ChallengeSets
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
-            //if (number % 2 = 0)
-            //{
-            //    return true;
-            //}
-            //else
-            //{ 
-            //    return false;
-            //}
+           // throw new NotImplementedException();
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
-            //if (num % 2 != 0)
-            //{
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            //throw new NotImplementedException();
+            if (num % 2 != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
@@ -66,7 +66,7 @@ namespace ChallengeSets
 
             //foreach (number in numbers)
             //{
-            //    number % 2 = 0;
+            //    number % 2 == 0;
 
             //   int sum = numbers.Sum();
                 
