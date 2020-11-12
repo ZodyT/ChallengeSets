@@ -69,8 +69,16 @@ namespace ChallengeSets
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            //throw new NotImplementedException();
-            return str1.Length < str2.Length ? str1.Length : str2.Length;
+            //throw new NotImplementedException();;
+
+            if (str1.Length < str2.Length)
+            {
+                return str1.Length;
+            }
+            else
+            {
+                return str2.Length;
+            }
         }
 
         public int Sum(int[] numbers)
@@ -89,14 +97,18 @@ namespace ChallengeSets
         public int SumEvens(int[] numbers)
         {
             throw new NotImplementedException();
-
-            //foreach (number in numbers)
+            //if (numbers == null)
             //{
-            //    number % 2 == 0;
-
-            //   int sum = numbers.Sum();
-                
-            //    return sum;
+            //    return 0;
+            //}
+            //int SumOfEvens = 0;
+            //foreach (int i in numbers)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        SumOfEvens += i;
+            //    }
+            //    return SumOfEvens;
             //}
         }
 
