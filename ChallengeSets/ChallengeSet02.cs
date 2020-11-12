@@ -129,13 +129,20 @@ namespace ChallengeSets
             {
                 return true;
             }
-
-
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            int oddsCounter = 0;
+            for (int i=0; i<number; i++)
+            {
+                if (i % 2 !=0)
+                {
+                    oddsCounter++;
+                }
+            }
+            return oddsCounter;
         }
     }
 }
