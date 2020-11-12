@@ -75,9 +75,14 @@ namespace ChallengeSets
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
-            //int sum = numbers.Sum();
-            //return sum;
+            //throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return 0;
+            }
+
+            int sum = numbers.Sum();
+            return sum;
             
         }
 
