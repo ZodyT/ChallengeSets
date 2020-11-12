@@ -114,17 +114,21 @@ namespace ChallengeSets
 
         public bool IsSumOdd(List<int> numbers)
         {
-             throw new NotImplementedException();
+            // throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return false;
+            }
 
-            //int sum = numbers.Sum();
-            //if (sum % 2 = 0)
-            //{
-            //    return false;
-            //}
-            //else
-            //{
-            //    return true;
-            //}
+            int sum = Sum(numbers.ToArray());
+            if (sum % 2 == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
 
 
         }
