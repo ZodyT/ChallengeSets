@@ -84,7 +84,17 @@ namespace ChallengeSets
         }
         public int[] GetOddsBelow100()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            int[] odds = new int[50];
+            for (int i = 0, index = 0; i < 100; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    odds[index] = i;
+                    index++;
+                }
+            }
+            return odds;
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
