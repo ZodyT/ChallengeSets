@@ -47,7 +47,7 @@ namespace ChallengeSets
         {
             long product = factor1 * factor2;
             {
-                return product;
+                return product; 
             }
         }
 
