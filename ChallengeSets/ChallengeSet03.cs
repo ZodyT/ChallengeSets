@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengeSets
 {
@@ -17,18 +18,14 @@ namespace ChallengeSets
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            throw new NotImplementedException();
-           // for (int i = 0; i < password.Length; i++)
-           // {
-           //     if (password.Any(string.IsDigit) && password.IsUpper() && password.IsLower())
-            //    {
-            //        return true;
-             //   }
-             //   else
-             //   {
-             //       return false;
-             //   }
-           // }
+            // throw new NotImplementedException();
+            if (password.Any(char.IsUpper) &&
+                 password.Any(char.IsLower) &&
+                 password.Any(char.IsNumber))
+            {
+                return true;
+            }
+            return false;
         }
 
         public char GetFirstLetterOfString(string val)
