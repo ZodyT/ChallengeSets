@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace ChallengeSets
 {
     public class ChallengeSet04
@@ -25,25 +27,28 @@ namespace ChallengeSets
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            //throw new NotImplementedException();
-            string[] myArray = {str1, str2, str3, str4};
+            throw new NotImplementedException();
+            //string[] myArray = {str1, str2, str3, str4};
+            //int Size = 0;
 
-            foreach (string word in myArray)
-            {
-                int Size = word.Length;
+            //foreach (string word in myArray)
+            //{
+            //    Size = word.Length;
 
-                if (Size < word.Length)
-                {
-                    Size = word.Length;
-                    
-                }                
-            }
-            return Size;
+            //    if (Size < word.Length)
+            //    {
+            //        Size = word.Length;                    
+            //    }                
+            //}
+            //return Size;
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            int[] numbers = {number1, number2, number3, number4};
+         
+            return numbers.Min();   
         }
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
