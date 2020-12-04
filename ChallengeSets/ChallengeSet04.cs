@@ -27,9 +27,9 @@ namespace ChallengeSets
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            throw new NotImplementedException();
-            //string[] myArray = {str1, str2, str3, str4};
-            //int Size = 0;
+            //throw new NotImplementedException();
+            string[] myArray = {str1, str2, str3, str4};
+            //int Size=0;
 
             //foreach (string word in myArray)
             //{
@@ -37,10 +37,20 @@ namespace ChallengeSets
 
             //    if (Size < word.Length)
             //    {
-            //        Size = word.Length;                    
-            //    }                
+            //        Size = word.Length;
+            //    }
             //}
             //return Size;
+
+            int minvalue = 99999999;
+            foreach (string word in myArray)
+            {
+                if (word.Length < minvalue)
+                {
+                    minvalue = word.Length;
+                }
+            }
+            return minvalue;
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
