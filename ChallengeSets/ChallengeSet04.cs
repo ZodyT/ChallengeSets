@@ -92,7 +92,38 @@ namespace ChallengeSets
 
         public double AverageEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            //int[] evens;
+
+            //foreach (int number in numbers)
+            //{
+            //    if (number % 2 == 0)
+            //    {
+            //        evens.Add();
+
+            //    }
+            //}
+
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+            int evenSum = 0;
+            int evenCount = 0;
+            foreach (int i in numbers)
+            {
+                if (i % 2 == 0)
+                {
+                    evenSum += i;
+                    evenCount++;
+                }
+            }
+            if (evenCount == 0)
+            {
+                return 0;
+            }
+            return (double)evenSum / evenCount;
+
         }
 
         public int Factorial(int number)
