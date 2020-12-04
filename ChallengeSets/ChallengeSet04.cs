@@ -63,7 +63,8 @@ namespace ChallengeSets
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            biz.Name = "TrueCoders";
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
@@ -135,6 +136,8 @@ namespace ChallengeSets
         public int Factorial(int number)
         {
             //throw new NotImplementedException();
+            if (number < 0) throw new ArgumentOutOfRangeException();
+
             if (number == 0)
             {
                 return 1;
