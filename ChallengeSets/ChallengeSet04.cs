@@ -100,7 +100,6 @@ namespace ChallengeSets
             //    if (number % 2 == 0)
             //    {
             //        evens.Add();
-
             //    }
             //}
 
@@ -128,7 +127,19 @@ namespace ChallengeSets
 
         public int Factorial(int number)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (number == 0)
+            {
+                return 1;
+            }
+
+            int result = 1;
+            while (number != 1)
+            {
+                result = result * number;
+                number = number - 1;
+            }
+            return result;
         }
     }
 }
