@@ -60,7 +60,30 @@ namespace ChallengeSets
 
         public string TurnWordsIntoSentence(string[] words)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (words == null || words.Length == 0 || words.Length == 1)
+            {
+                return "";
+            }
+            string sentence = "";
+            int counter = 0;
+            foreach (string str in words)
+            {
+                if (str == " " || str == "")
+                {
+                    counter++;
+                    continue;
+                }
+
+                string toAdd = str.Replace(" ", "");
+                sentence += toAdd;
+
+                if (counter < words.Length - 1 && toAdd != "") sentence += " ";
+                else if (counter == words.Length - 1) sentence += ".";
+
+                counter++;
+            }
+            return sentence;
         }
 
         public double[] GetEveryFourthElement(List<double> elements)
