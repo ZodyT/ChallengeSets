@@ -41,7 +41,21 @@ namespace ChallengeSets
 
         public int SumElementsThatFollowAnEven(int[] numbers)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            if (numbers == null) return 0;
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    try { sum += numbers[i + 1]; }
+                    catch (System.IndexOutOfRangeException)
+                    {
+                        //
+                    }
+                }
+            }
+            return sum;
         }
 
         public string TurnWordsIntoSentence(string[] words)
