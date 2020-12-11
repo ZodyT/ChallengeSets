@@ -112,7 +112,7 @@ namespace ChallengeSets
                     if (i == j) continue;
                     if (nums[i] + nums[j] == targetNumber)
                     {
-                        return true;
+                          return true;
                     }
                 }
             }
