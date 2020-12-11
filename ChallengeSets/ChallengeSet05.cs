@@ -25,7 +25,18 @@ namespace ChallengeSets
 
         public bool IsAscendingOrder(int[] numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (numbers == null || numbers.Length == 0) return false;
+            int previousNumber = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i] < previousNumber)
+                {
+                    return false;
+                }
+                previousNumber = numbers[i];
+            }
+            return true;
         }
 
         public int SumElementsThatFollowAnEven(int[] numbers)
