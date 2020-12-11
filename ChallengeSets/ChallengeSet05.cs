@@ -13,7 +13,14 @@ namespace ChallengeSets
 
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            foreach (Business business in businesses)
+            {
+                if (business.TotalRevenue <= 0)
+                {
+                    business.Name = "CLOSED";
+                }
+            }
         }
 
         public bool IsAscendingOrder(int[] numbers)
