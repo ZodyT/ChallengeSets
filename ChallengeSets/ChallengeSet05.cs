@@ -88,7 +88,17 @@ namespace ChallengeSets
 
         public double[] GetEveryFourthElement(List<double> elements)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (elements == null) return new double[0];
+            List<double> everyFourth = new List<double>();
+            for (int i = 1; i <= elements.Count; i++)
+            {
+                if (i % 4 == 0)
+                {
+                    everyFourth.Add(elements[i - 1]);
+                }
+            }
+            return everyFourth.ToArray();
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
