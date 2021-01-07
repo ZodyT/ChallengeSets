@@ -8,8 +8,9 @@ namespace ChallengeSets
     {
         public bool CollectionContainsWord(IEnumerable<string> words, string word, bool ignoreCase)
         {
-            //throw new NotImplementedException();
-            
+            {
+                //throw new NotImplementedException();
+
                 if (words == null || words.Contains(null))
                 {
                     return false;
@@ -25,28 +26,38 @@ namespace ChallengeSets
                     }
                 }
                 return words.Contains(word);
-            
+            }
         }
 
         public bool IsPrimeNumber(int num)
+
         {
             //throw new NotImplementedException();
+            if (num == 2)
+            {
+                return true;
+            }
+            else if (num <= 1)
 
-                if (num == 2)
-                {
-                    return true;
-                }
-                else if (num <= 1)
+            {
+                return false;
+            }
+
+            var limit = Math.Ceiling(Math.Sqrt(num));
+
+            for (var i = 2; i <= limit; ++i)
+            {
+                if (num % i == 0)
                 {
                     return false;
                 }
-                else
-                {
-                    return false;
-                }
-            
 
+            }
+
+            return true;
         }
+
+
 
         public int IndexOfLastUniqueLetter(string str)
         {
