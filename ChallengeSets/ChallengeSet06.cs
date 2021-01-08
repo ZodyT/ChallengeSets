@@ -60,7 +60,7 @@ namespace ChallengeSets
         public int IndexOfLastUniqueLetter(string str)
         {
             // throw new NotImplementedException();
-            if(str.Length == 1)
+            if (str.Length == 1)
             {
                 return 0;
             }
@@ -75,30 +75,30 @@ namespace ChallengeSets
 
             var count = new int[str.Length];
 
-            for (int i = 0; i <str.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
                 foreach (var lett in str)
                 {
                     if (str[i] == lett)
                     {
                         count[i]++;
-                    }    
+                    }
                 }
             }
 
             for (int i = 0; i < str.Length; i++)
             {
-                if(count[i] == 1)
+                if (count[i] == 1)
                 {
-                    answer = 1;
+                    answer = i;
                 }
-                else if (count[i] >1)
+                else if (count[i] > 1)
                 {
                     counter++;
                 }
             }
 
-            if(counter == str.Length)
+            if (counter == str.Length)
             {
                 return -1;
             }
